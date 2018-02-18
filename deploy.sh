@@ -8,4 +8,4 @@ npm install
 npm update
 
 # build project
-ng build --output-path /var/www/html
+ng build --output-path /var/www/html --prod
