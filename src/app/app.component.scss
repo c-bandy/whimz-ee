@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 $desktop-min-width: 600px;
 $desktop-max-size: 900px;
 
@@ -17,50 +19,29 @@ $standard-curve: cubic-bezier(0.4, 0.0, 0.2, 1);
     }
 }
 
-p {
-    font-size: 18px;
-    margin-top: 1em;
-    margin-bottom: 0;
-    line-height: 1.5;
+::ng-deep {
+    p {
+        font-size: 18px;
+        margin-top: 1em;
+        margin-bottom: 0;
+        line-height: 1.5;
 
-    @media (min-width: $desktop-min-width) {
-        font-size: 21px;
+        @media (min-width: $desktop-min-width) {
+            font-size: 21px;
+        }
     }
-}
 
-h1 {
-    font-size: 36px;
-    margin-top: 1.5em;
-    margin-bottom: 0;
+    h1 {
+        font-size: 36px;
+        margin-top: 1.5em;
+        margin-bottom: 0;
 
-    @media (min-width: $desktop-min-width) {
-        font-size: 42px;
+        @media (min-width: $desktop-min-width) {
+            font-size: 42px;
+        }
     }
-}
 
-a {
-    color: #ff5252;
-
-//  :visited {
-//      color: #b03939;
-//  }
-
-}
-
-.accent-color {
-    color: #ff5252;
-}
-
-.links-divider {
-    background-color: white;
-    display: inline-block;
-    width: .25rem;
-    height: .25rem;
-    vertical-align: middle;
-    margin-left: .5em;
-    margin-right: .5em;
-}
-
-.link {
-    display: inline-block;
+    a {
+        color: #ff5252;
+    }
 }
