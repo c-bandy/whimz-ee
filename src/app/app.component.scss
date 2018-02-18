@@ -10,7 +10,6 @@ $standard-curve: cubic-bezier(0.4, 0.0, 0.2, 1);
     margin-left: auto;
     padding-right: 40px;
     padding-left: 40px;
-    transition: 300ms $standard-curve padding;
 
     @media (min-width: $desktop-min-width) {
         padding-right: 60px;
