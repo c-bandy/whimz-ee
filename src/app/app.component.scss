@@ -1,0 +1,67 @@
+$desktop-min-width: 600px;
+$desktop-max-size: 900px;
+
+$standard-curve: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+:host {
+    display: block;
+    max-width: $desktop-max-size;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    transition: 300ms $standard-curve padding;
+
+    @media (min-width: $desktop-min-width) {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+
+p {
+    font-size: 16px;
+    margin-top: 1em;
+    margin-bottom: 0;
+    line-height: 1.5;
+
+    @media (min-width: $desktop-min-width) {
+        font-size: 21px;
+    }
+}
+
+h1 {
+    font-size: 34px;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+
+    @media (min-width: $desktop-min-width) {
+        font-size: 42px;
+    }
+}
+
+a {
+    color: #ff5252;
+
+//  &:visited {
+//      color: #b03939;
+//  }
+
+}
+
+.accent-color {
+    color: #ff5252;
+}
+
+.links-divider {
+    background-color: white;
+    display: inline-block;
+    width: .25rem;
+    height: .25rem;
+    vertical-align: middle;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.link {
+    display: inline-block;
+}
