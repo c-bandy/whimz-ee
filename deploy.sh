@@ -1,5 +1,7 @@
 #!/bin/bash
-# this file gets run on every push to master
+
+## deploy.sh
+## this file gets run on every push to master
 
 # make sure our dependencies are correct
 npm update
