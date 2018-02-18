@@ -2,7 +2,7 @@
 # this file gets run on every push to master
 
 # make sure our dependencies are correct
-npm prune
+npm update
 npm install
 
 # build project
