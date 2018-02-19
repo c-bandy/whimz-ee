@@ -1,1 +1,18 @@
+<header>
+    <div class="header__title">
+        {{title}}
+        <span class="header__divider">/</span>
+    </div>
+    <nav>
+        <a routerLink="" class="nav__link" routerLinkActive="nav__link--active" [routerLinkActiveOptions]= "{exact: true}">
+            welcome
+        </a>
+        <a routerLink="projects" class="nav__link" routerLinkActive="nav__link--active">
+            projects
+        </a>
+        <a routerLink="contact" class="nav__link" routerLinkActive="nav__link--active">
+            contact
+        </a>
+    </nav>
+</header>
 <router-outlet></router-outlet>
