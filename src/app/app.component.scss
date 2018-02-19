@@ -33,6 +33,8 @@ header {
     font-weight: 600;
     margin-left: -0.075em;
     line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .header__divider {
@@ -72,11 +74,18 @@ nav {
     &:hover:after {
         right: 0;
     }
+    &--active:after {
+        animation: 400ms $standard-curve enter forwards;
+        right: 0;
+        background-color: #ff5252;
+    }
 
-    &--active {
-        &:after {
+    @keyframes enter {
+        from {
+            right: 100%;
+        }
+        to {
             right: 0;
-            background-color: #ff5252;
         }
     }
 }
