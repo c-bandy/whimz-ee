@@ -3,9 +3,12 @@
 ## deploy.sh
 # this file gets run on every push to master
 
-# make sure our dependencies are correct
-npm install
+# make sure our dependencies are up to date
 npm update
 
 # build project
-ng build --output-path /var/www/html/www.whimz.ee --prod
+ng build --prod
+
+# prepare our directory
+rm -rf /var/www/www.whimz.ee/
+cp -R dist /var/www/www.whimz.ee
