@@ -10,5 +10,5 @@ npm update
 ng build --prod
 
 # prepare our directory
-rm -rf /var/www/www.whimz.ee/
-cp -R dist /var/www/www.whimz.ee
+rm -rf /var/www/html/www.whimz.ee/
+cp -R dist /var/www/html/www.whimz.ee
