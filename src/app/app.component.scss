@@ -80,8 +80,10 @@ nav {
         right: 0;
     }
     &--active:after {
-        animation: 400ms $standard-curve enter forwards;
+        right: 0;
         background-color: $primary-color;
+//      animation: 400ms $standard-curve enter forwards;
+//          - disabled for now, currently causes menu selection to get stuck in firefox
     }
     
     @media (min-width: $desktop-min-width) {
