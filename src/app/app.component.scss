@@ -73,6 +73,8 @@ nav {
         position: absolute;
         left: 0.15rem;
         right: 100%;
+        right: calc(100% - .15rem);
+//          - if browser supports calc(), render exact starting position
         top: 110%;
         will-change: background-color, right;
     }
