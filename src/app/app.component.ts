@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
   preserveWhitespaces: false
 })
 export class AppComponent {
-  title = 'ben åberg';
+  title = 'ben aberg';
 
   public constructor(private titleService: Title ) { }
  
