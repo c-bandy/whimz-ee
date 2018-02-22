@@ -1,18 +1,22 @@
 <header>
-    <a routerLink="" class="header__title">
-        ben aberg
-        <span class="header__divider">/</span>
-    </a>
-    <nav>
-        <a routerLink="" class="nav__link" routerLinkActive="nav__link--active" [routerLinkActiveOptions]= "{exact: true}">
-            welcome
+    <div class="header__wrap">
+        <a routerLink="" class="header__title">
+            ben aberg
+            <span class="header__divider">/</span>
         </a>
-        <a routerLink="projects" class="nav__link" routerLinkActive="nav__link--active">
-            projects
-        </a>
-        <a routerLink="contact" class="nav__link" routerLinkActive="nav__link--active">
-            contact
-        </a>
-    </nav>
+        <nav>
+            <a routerLink="" class="nav__link" routerLinkActive="nav__link--active" [routerLinkActiveOptions]= "{exact: true}">
+                welcome
+            </a>
+            <a routerLink="projects" class="nav__link" routerLinkActive="nav__link--active">
+                projects
+            </a>
+            <a routerLink="contact" class="nav__link" routerLinkActive="nav__link--active">
+                contact
+            </a>
+        </nav>
+    </div>
 </header>
-<router-outlet></router-outlet>
+<section class="body">
+    <router-outlet></router-outlet>
+</section>
