@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
   preserveWhitespaces: false
 })
 export class AppComponent {
-  title = 'ben aberg';
-
+  
   public constructor() { }
  
 }
