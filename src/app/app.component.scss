@@ -103,6 +103,9 @@ nav {
 
 .body {
     @include boxed;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 // TODO: move this elsewhere
