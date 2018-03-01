@@ -17,10 +17,10 @@ export function metaFactory(): MetaLoader {
       defaults: {
          title: 'ben aberg',
          description: 'web & ui design for the modern world',
-         'og:image': 'https://www.whimz.ee/assets/og.png',
-         'og:image:height': '1200',
-         'og:image:width': '1200',
-         'og:type': 'website'
+            'og:image': 'https://www.whimz.ee/assets/opengraph-graphic.png',
+            'og:image:height': '1200',
+            'og:image:width': '1200',
+            'og:type': 'website'
       }
    });
 }
