@@ -10,39 +10,39 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 export function metaFactory(): MetaLoader {
-   return new MetaStaticLoader({
-      pageTitlePositioning: PageTitlePositioning.AppendPageTitle,
-      pageTitleSeparator: ' / ',
-      applicationName: 'ben aberg',
-      defaults: {
-         title: 'ben aberg',
-         description: 'web & ui design for the modern world',
-            'og:image': 'https://www.whimz.ee/assets/opengraph-graphic.png',
-            'og:image:height': '1200',
-            'og:image:width': '1200',
-            'og:type': 'website'
-      }
-   });
+  return new MetaStaticLoader({
+    pageTitlePositioning: PageTitlePositioning.AppendPageTitle,
+    pageTitleSeparator: ' / ',
+    applicationName: 'ben aberg',
+    defaults: {
+      title: 'ben aberg',
+      description: 'ux design for the modern world',
+      'og:image': 'https://www.whimz.ee/assets/opengraph-graphic.png',
+      'og:image:height': '1200',
+      'og:image:width': '1200',
+      'og:type': 'website'
+    }
+  });
 }
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      NotFoundComponent,
-      HomeComponent,
-      ContactComponent,
-      ProjectsComponent
-   ],
-   imports: [
-      BrowserModule,
-      AppRoutingModule,
-      MetaModule.forRoot({
-         provide: MetaLoader,
-         useFactory: (metaFactory)
-      })
-   ],
-providers: [],
-   bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    NotFoundComponent,
+    HomeComponent,
+    ContactComponent,
+    ProjectsComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MetaModule.forRoot({
+      provide: MetaLoader,
+      useFactory: (metaFactory)
+    })
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 
-export class AppModule { }
+export class AppModule {}
