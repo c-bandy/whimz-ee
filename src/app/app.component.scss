@@ -4,7 +4,7 @@ $desktop-min-width: 600px;
 $desktop-max-size: 800px;
 
 $primary-color: #ff5252;
-$secondary-color: #0081d5;
+$secondary-color: #527fff;
 $header-color: #002238;
 
 $standard-curve: cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -29,7 +29,7 @@ header {
     background-color: $header-color;
 
     @media (min-width: $desktop-min-width) {
-        font-size: 46px;
+        font-size: 48px;
     }
 }
 
@@ -38,9 +38,8 @@ header {
 }
 
 .header__title {
-    font-weight: 600;
+    // - correct for font
     margin-left: -0.075em;
-//      - correct for font
     line-height: 1;
     text-decoration: none;
     color: #fff;
@@ -63,27 +62,28 @@ nav {
     position: relative;
     margin-top: 0.5em;
     margin-left: 1em;
+    // - add margin to compensate for :hover and --select effect
     margin-bottom: .25em;
-//      - add margin to compensate for :hover and --select effect
 
     &:after {
         content: '';
-        transition: 200ms $standard-curve all;
+        transition: 150ms $standard-curve background-color, 
+            150ms $standard-curve right;
         background-color: #fff;
         height: 2px;
         position: absolute;
         left: 0.15rem;
         right: 100%;
+        // - if browser supports calc(), render exact starting position
         right: calc(100% - .15rem);
-//          - if browser supports calc(), render exact starting position
-        top: 110%;
+        top: 112.5%;
         will-change: background-color, right;
     }
     &:hover:after {
-        right: 0;
+        right: (1 - 2/5) * 100%;
     }
     &--active:after {
-        right: 0;
+        right: 0 !important;
         background-color: $primary-color;
     }
 }
