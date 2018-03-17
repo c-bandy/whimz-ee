@@ -4,7 +4,7 @@
 # this file gets run on every push to master
 
 # make sure our dependencies are up to date
-npm update
+npm install
 
 # build project
 ng build --prod
