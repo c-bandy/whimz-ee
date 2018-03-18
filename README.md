@@ -1,11 +1,28 @@
 whimz-ee
 ========
 
-porfolio site for personal use, but you may use any component of it with attribution to the respective owners.
+porfolio site for personal use. runs on angular 5 and utilizes [angular universal](https://universal.angular.io/) for server side rendering.
 
-credits
+you may use any component of this site with attribution to the respective owners.
+
+prerequisites
 --------
 
-font used is montserrat, by julieta ulanovsky.
+* npm installed globally
 
-page meta graphics generated using [realfavicongenerator.net](https://realfavicongenerator.net/).
+quick start
+--------
+
+```
+# install dependencies
+npm install
+
+# local development
+npm run start
+```
+
+acknowledgements
+--------
+
+* font used is montserrat, from [google fonts](https://fonts.google.com/).
+* page meta graphics generated using [realfavicongenerator.net](https://realfavicongenerator.net/).
