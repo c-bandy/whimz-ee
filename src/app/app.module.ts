@@ -34,7 +34,7 @@ export function metaFactory(): MetaLoader {
     ProjectsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'whimz-ee-site' }),
     AppRoutingModule,
     MetaModule.forRoot({
       provide: MetaLoader,
