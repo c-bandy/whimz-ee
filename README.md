@@ -13,7 +13,7 @@ prerequisites
 quick start
 --------
 
-```
+```bash
 # install dependencies
 npm install
 
