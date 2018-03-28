@@ -1,4 +1,6 @@
 @import '~normalize.css';
+@import '~_variables.scss';
+
 body {
   font-family: 
     'Montserrat', 
@@ -12,6 +14,6 @@ body {
     "Open Sans", 
     "Helvetica Neue", 
     sans-serif;
-  background-color: #001725;
-  color: #fff;
+  background-color: $secondary;
+  color: $dark1;
 }
