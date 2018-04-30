@@ -14,7 +14,7 @@ const routes: Routes = [
     canActivate: [MetaGuard],
     data: {
       meta: {
-        title: 'ben aberg',
+        title: 'cassidy',
         override: true,
         description: 'web & ui design for the modern world'
       }
