@@ -13,9 +13,9 @@ export function metaFactory(): MetaLoader {
   return new MetaStaticLoader({
     pageTitlePositioning: PageTitlePositioning.AppendPageTitle,
     pageTitleSeparator: ' / ',
-    applicationName: 'ben aberg',
+    applicationName: 'cassidy',
     defaults: {
-      title: 'ben aberg',
+      title: 'cassidy',
       description: 'ux design for the modern world',
       'og:image': 'https://www.whimz.ee/assets/opengraph-graphic.png',
       'og:image:height': '1200',
